@@ -17,20 +17,25 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class CreateQr extends AppCompatActivity {
     ImageView qrcode;
-    private String text;
+    /*private String text;*/
+    public androidx.appcompat.widget.AppCompatButton qrcode_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createqr);
 
         qrcode = findViewById(R.id.qrcode);
-        text = "https://www.naver.com";
+        /*text = "https://www.naver.com";*/
+        // qr코드값을 버튼으로 인식받음
+        qrcode_btn = findViewById (R.id.qrcode_btn);
 
         Button create_qrcode_btn = findViewById(R.id.qrcode_btn);
         create_qrcode_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MultiFormatWriter writer = new MultiFormatWriter();
+                // 변수에 담기
+                String text = qrcode_btn.getText().toString();
                 try{
                     //1. 바코드 생성
                     BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE, 350, 350);

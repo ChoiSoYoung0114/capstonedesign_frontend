@@ -27,7 +27,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="5dp"/>
 
 
         </LinearLayout>
@@ -48,7 +48,7 @@
                 android:id="@+id/idText"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:background="@color/teal_200"/>
 
             <EditText
@@ -148,7 +148,42 @@
 
             </RadioGroup>
 
+            <RadioGroup
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/UserPayerGroup"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="사용자"
+                    android:id="@+id/User"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="결제자"
+                    android:id="@+id/Payer"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:id="@+id/addressText"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="280dp"

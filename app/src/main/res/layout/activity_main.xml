@@ -11,17 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="300dp"
+
+        <ImageView
+            android:layout_width="150dp"
             android:layout_height="150dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:background="@color/teal_200"
-            android:text="지원제도 및 정책"
-            android:id="@+id/Policy"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_launcher" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="300dp"
@@ -32,7 +28,7 @@
             android:background="@color/teal_200"
             android:text="QR코드로 결제"
             android:id="@+id/QrPay"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="2dp"
             android:layout_gravity="center" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -42,7 +38,7 @@
             android:textStyle="bold"
             android:textColor="#ffffff"
             android:background="@color/teal_200"
-            android:text="상품권 등록"
+            android:text="바우처 등록"
             android:id="@+id/PinRegister"
             android:layout_marginTop="20dp"
             android:layout_gravity="center" />
@@ -67,7 +63,6 @@
             android:background="@color/teal_200"/>
 
         <EditText
-            android:inputType="textPassword"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -80,14 +75,13 @@
             android:background="@color/teal_200"/>
 
         <EditText
-            android:inputType="textPassword"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:padding="10dp"
-            android:id="@+id/Store"
-            android:drawableStart="@drawable/ic_baseline_storefront_24"
-            android:drawableLeft="@drawable/ic_baseline_storefront_24"
+            android:id="@+id/Policy"
+            android:drawableStart="@drawable/ic_baseline_account_balance_24"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
             android:layout_marginTop="250dp"
             android:layout_marginLeft="30dp"
             android:background="@color/teal_200"/>
