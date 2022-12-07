@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teal_200"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="결제내역"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="2022.11.11"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="결제장소 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="결제금액 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="잔여금액 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="2022.11.10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="결제장소 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="결제금액 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:text="잔여금액 : "
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
